@@ -116,7 +116,7 @@ public:
     // Create a new array from begin to end
     T *slice(int begin, int end)
     {
-        if(begin < 0 || end >= array_size || begin > end)
+        if(begin < 1 || end >= array_size || begin > end)
         {
             std::cout << "Invalid slice bounds." << std::endl;
             return nullptr;
